@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lorem Ipsum Portfolio</title>
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="logo">Lorem Ipsum</div>
+
+    <nav class="desktop-nav">
+      <a href="#home">HOME</a>
+      <a href="#works">MY WORKS</a>
+      <a href="#" id="openContactDesktop">CONTACT ME</a>
+    </nav>
+
+    <button class="menu-toggle" id="openMenu" aria-label="Ava menüü">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <aside class="side-panel" id="menuPanel">
+    <button class="close-btn" id="closeMenu" aria-label="Sulge menüü">✕</button>
+
+    <nav class="side-nav">
+      <a href="#home" class="side-link">HOME</a>
+      <a href="#works" class="side-link">MY WORKS</a>
+      <a href="#" class="side-link" id="openContactMenu">CONTACT ME</a>
+    </nav>
+  </aside>
+
+  <aside class="side-panel contact-panel" id="contactPanel">
+    <button class="close-btn" id="closeContact" aria-label="Sulge kontakt">✕</button>
+
+    <div class="contact-panel-content">
+      <h2>Contact Me</h2>
+      <p>Send a message using the contact form.</p>
+
+      <form class="contact-form">
+        <div class="label">
+          <label for="name">Name</label>
+        </div>
+        <div class="form-input">
+          <input type="text" id="name" required>
+        </div>
+
+        <div class="label">
+          <label for="email">Email</label>
+        </div>
+        <div class="form-input">
+          <input type="email" id="email" required>
+        </div>
+
+        <div class="label">
+          <label for="message">Message</label>
+        </div>
+        <div class="text-area">
+          <textarea id="message" rows="8" required></textarea>
+        </div>
+
+        <div class="btn-form">
+          <button type="submit">Send it</button>
+        </div>
+      </form>
+    </div>
+  </aside>
+
+  <div class="overlay" id="overlay"></div>
+
+  <main class="page-wrapper">
+    <section class="hero-section" id="home">
+      <div class="hero-image-box">
+        <img id="profileImage" src="images/mina.webp" alt="Minu pilt">
+      </div>
+
+      <div class="hero-text-box">
+        <p>
+          Who am I... Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Vestibulum in
+          urna vitae nisi dapibus laoreet.
+        </p>
+
+        <p>
+          Vivamus blandit mauris eget convallis semper, sed sagittis lectus egestas a.
+          Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
+          turpis egestas.
+        </p>
+      </div>
+    </section>
+
+    <section class="works-section" id="works">
+      <div class="section-line"></div>
+      <h2>MY WORKS</h2>
+
+      <p class="section-intro">
+        Nunc cursus orci at ligula interdum, urna massa pulvinar elit, sit amet
+        aliquam elit libero in justo. Praesent id ligula ac dolor pulvinar finibus,
+        vitae viverra sapien dignissim.
+      </p>
+
+      <div class="works-grid">
+        <div class="work-card"><img src="images/1.webp" alt="Töö 1"></div>
+        <div class="work-card"><img src="images/2.webp" alt="Töö 2"></div>
+        <div class="work-card"><img src="images/3.webp" alt="Töö 3"></div>
+        <div class="work-card"><img src="images/4.webp" alt="Töö 4"></div>
+        <div class="work-card"><img src="images/5.webp" alt="Töö 5"></div>
+        <div class="work-card"><img src="images/6.webp" alt="Töö 6"></div>
+      </div>
+
+      <div class="mobile-work-view">
+        <img id="mobileWorkImage" src="images/1.webp" alt="Mobile work image">
+        <p class="mobile-work-text">Tap the image to view the next work.</p>
+      </div>
+    </section>
+
+    <section class="contact-preview-section" id="contact">
+      <div class="section-line"></div>
+      <h2>CONTACT ME</h2>
+
+      <p class="section-intro">
+        Nunc cursus orci at ligula interdum, urna massa pulvinar elit, sit amet
+        aliquam elit libero in justo. Press the button below to open the contact form.
+      </p>
+
+      <button class="contact-open-btn" id="openContactSection">Open Contact Form</button>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© Lorem Ipsum, 2026</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
